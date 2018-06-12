@@ -3,11 +3,9 @@
     padding: 0;
     font-family: 'Dosis', sans-serif;
     color: white;
-
 }
 
-
-/* text go away on focus*/
+/* text goes away on focus*/
 
 input:focus::-webkit-input-placeholder {
     color: transparent;
@@ -17,19 +15,13 @@ input:focus:-moz-placeholder {
     color: transparent;
 }
 
-/* Firefox 18- */
-
 input:focus::-moz-placeholder {
     color: transparent;
 }
 
-/* Firefox 19+ */
-
 input:focus:-ms-input-placeholder {
     color: transparent;
 }
-
-/* oldIE 😉 */
 
 body {
     background-color: #c9c9c9;
@@ -38,57 +30,56 @@ body {
 }
 
 button {
-
     border-radius: 10px;
     padding: 7px;
     background-color: #e3e3e3;
     font-size: 18px;
     margin: auto;
     color: black;
-
+    border-style: none;
+    transition: all 0.3s ease-out;
 }
 
 button:hover {
     background-color: #c9c9c9;
     cursor: pointer;
-
 }
 
 #box-flex {
-
-    display: flex;
-    flex-direction: column;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 400px;
+    height: 500px;
     background-color: DodgerBlue;
-    margin: 50px;
     padding: 50px;
     background-color: #9ad3de;
-    /*    position: absolute;*/
 }
 
 .frame {
-    display: flex;
-    flex-direction: column;
-    max-width: 200px;
+    display: inline-block;
+    max-width: 300px;
     background-color: #89bdd3;
-    margin: 10px;
+    margin-top: 20px;
     padding: 15px;
     border-radius: 10px;
     position: relative;
-    opacity: 0.7;
-
+    text-align: center;
+    opacity: .6;
+    transition: .3s;
 }
 
 .frame:hover {
-    opacity: 1.0;
-
+    opacity: 1;
 }
-
 
 .center {
     display: block;
     margin-left: auto;
     margin-right: auto;
-
 }
 
 input {
@@ -99,15 +90,15 @@ input {
     font-size: 20px;
     color: black;
     border-radius: 10px;
+    border: 2px solid #ccc;
+    transition: all 0.3s ease-out;
 }
 
 input[type=text]:focus {
-    background-color: lightblue;
+    background-color: #fffbbf;
 }
 
-
 .close {
-
     text-decoration: none;
     font-size: 15px;
     margin: 5px;
@@ -120,4 +111,15 @@ input[type=text]:focus {
 .link {
     text-decoration: none;
     font-size: 20px;
+}
+
+span {
+    margin: 5px;
+    color: red;
+}
+
+#bookmarksResults {
+    width: 400px;
+    height: 300px;
+    overflow-y: auto;
 }
