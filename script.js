@@ -74,10 +74,10 @@ function deleteBookmark(url) {
     "use strict";
     var bookmarks = JSON.parse(localStorage.getItem('bookmarks'));
     // Loop through the bookmarks and remove from array
-    for (let i = 0; i < bookmarks.length; i++) {
+    for (var i = 0; i < bookmarks.length; i++) {
         if (bookmarks[i].url == url) {
             bookmarks.splice(i, 1);
-        }
+         }
     }
     localStorage.setItem('bookmarks', JSON.stringify(bookmarks));
     fetchBookmarks();
@@ -95,7 +95,7 @@ function fetchBookmarks() {
         //        bookmarksResults.innerHTML = '';
         while (bookmarksResults.firstChild) bookmarksResults.removeChild(bookmarksResults.firstChild);
         // Build output
-        for (let i = 0; i < bookmarks.length; i++) {
+        for (var i = 0; i < bookmarks.length; i++) {
             var name = bookmarks[i].name;
             var url = bookmarks[i].url;
             bookmarksResults.innerHTML += '<a target="_blank" class="link" href="' + url + '"><div class="frame">' +
