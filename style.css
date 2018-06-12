@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Dosis', sans-serif;
+    color: white;
+
+}
+
+
+/* text go away on focus*/
+
+input:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+input:focus:-moz-placeholder {
+    color: transparent;
+}
+
+/* Firefox 18- */
+
+input:focus::-moz-placeholder {
+    color: transparent;
+}
+
+/* Firefox 19+ */
+
+input:focus:-ms-input-placeholder {
+    color: transparent;
+}
+
+/* oldIE 😉 */
+
+body {
+    background-color: #c9c9c9;
+    font-family: Arial;
+    font-size: 15px;
+}
+
+button {
+
+    border-radius: 10px;
+    padding: 7px;
+    background-color: #e3e3e3;
+    font-size: 18px;
+    margin: auto;
+    color: black;
+
+}
+
+button:hover {
+    background-color: #c9c9c9;
+    cursor: pointer;
+
+}
+
+#box-flex {
+
+    display: flex;
+    flex-direction: column;
+    background-color: DodgerBlue;
+    margin: 50px;
+    padding: 50px;
+    background-color: #9ad3de;
+    /*    position: absolute;*/
+}
+
+.frame {
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+    background-color: #89bdd3;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    position: relative;
+    opacity: 0.7;
+
+}
+
+.frame:hover {
+    opacity: 1.0;
+
+}
+
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-size: 20px;
+    color: black;
+    border-radius: 10px;
+}
+
+input[type=text]:focus {
+    background-color: lightblue;
+}
+
+
+.close {
+
+    text-decoration: none;
+    font-size: 15px;
+    margin: 5px;
+    position: absolute;
+    top: -10%;
+    right: 0;
+    padding: 3px;
+}
+
+.link {
+    text-decoration: none;
+    font-size: 20px;
+}
